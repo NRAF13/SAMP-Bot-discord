@@ -15,14 +15,14 @@ var query = require('samp-query');
 //_____________________________[BOT Configuration]_________________________________________
 //@audit Settings
 
-const botChar = "$"; // Bot prefix character
-let Samp_IP = "3.239.100.224";
-let Samp_Port = 7777;
+const botChar = "/"; // Bot prefix character
+let Samp_IP = "";
+let Samp_Port = ;
 let Community_Tag ="WG";
 
-let userToSubmitApplicationsTo = '796914799098462259';//Default Channel Id for User Applications
-let reportChannelID = '796914799098462259'; // Channel for the ingam reports
-let adminCmdsChannelID = '796914799098462259'; // Admin Cmds channel
+let userToSubmitApplicationsTo = '';//Default Channel Id for User Applications
+let reportChannelID = ''; // Channel for the ingam reports
+let adminCmdsChannelID = ''; // Admin Cmds channel
 let Bot_debug_mode = false;
 
 //_______________________________[APPLICATIONS]______________________________________________
@@ -123,7 +123,7 @@ function GetPlayersOnline(msg)
 {
 	var options = {
 		host: Samp_IP,
-		port: Samp_Port
+		port: Samp_Port,
 	}
 	//console.log(options.host)
 	query(options, function (error, response) {
@@ -447,7 +447,7 @@ const setChannel = (msg,param) => {
 		return;
 	}
 
-	if (!msg.member.roles.find("name", "Admin")) 
+	if (!msg.member.roles.find("name", "DEV")) 
 	{
 		msg.reply("Only Members with Role **Admin** can do this.")
 		return;
@@ -482,7 +482,7 @@ const setSampIP = (msg,param) => {
 		return;
 	}
 
-	if (msg.member.roles.find("name", "Admin")) 
+	if (msg.member.roles.find("name", "DEV")) 
 	{
 		msg.reply("Only Members with Role **Admin** can do this.")
 		return;
