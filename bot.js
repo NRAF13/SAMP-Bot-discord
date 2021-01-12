@@ -123,7 +123,7 @@ function GetPlayersOnline(msg)
 {
 	var options = {
 		host: Samp_IP,
-		port: Samp_Port,
+		port: Samp_Port
 	}
 	//console.log(options.host)
 	query(options, function (error, response) {
