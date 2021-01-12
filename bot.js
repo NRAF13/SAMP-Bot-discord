@@ -155,7 +155,7 @@ function GetPlayersOnline(msg)
 					title: 'Unity of Indonesia Roleplay',
 					color: embedColor,
 					fields: [
-						{ name: 'Server IP', value: response['address'], inline: false },
+						{ name: 'Server name', value: response['hostname'], inline: false },
 						{ name: 'Players Online', value: response['online'], inline: true },
 						{ name: 'Max Players', value: response['maxplayers'], inline: true },
                                                 { name: 'Gamemode', value: response['gamemode'], inline: true },
