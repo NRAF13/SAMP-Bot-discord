@@ -16,8 +16,8 @@ var query = require('samp-query');
 //@audit Settings
 
 const botChar = "/"; // Bot prefix character
-let Samp_IP = "";
-let Samp_Port = ;
+let Samp_IP = "3.239.100.224";
+let Samp_Port = 7777;
 let Community_Tag ="WG";
 
 let userToSubmitApplicationsTo = '';//Default Channel Id for User Applications
@@ -447,7 +447,7 @@ const setChannel = (msg,param) => {
 		return;
 	}
 
-	if (!msg.member.roles.find("name", "DEV")) 
+	if (!msg.member.roles.find("name", "Admin")) 
 	{
 		msg.reply("Only Members with Role **Admin** can do this.")
 		return;
@@ -482,7 +482,7 @@ const setSampIP = (msg,param) => {
 		return;
 	}
 
-	if (msg.member.roles.find("name", "DEV")) 
+	if (!msg.member.roles.find("name", "Admin")) 
 	{
 		msg.reply("Only Members with Role **Admin** can do this.")
 		return;
