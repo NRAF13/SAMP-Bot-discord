@@ -15,7 +15,7 @@ var query = require('samp-query');
 //_____________________________[BOT Configuration]_________________________________________
 //@audit Settings
 
-const botChar = "/"; // Bot prefix character
+const botChar = "$"; // Bot prefix character
 let Samp_IP = "3.239.100.224";
 let Samp_Port = 7777;
 let Community_Tag ="WG";
