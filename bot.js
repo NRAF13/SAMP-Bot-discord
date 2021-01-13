@@ -156,9 +156,10 @@ function GetPlayersOnline(msg)
 					color: embedColor,
 					fields: [
 						{ name: 'Server name', value: response['hostname'], inline: false },
-						{ name: 'Players Online', value: response['players'], inline: true },
+						{ name: 'Players Online', value: response['online'], inline: true },
 						{ name: 'Max Players', value: response['maxplayers'], inline: true },
                                                 { name: 'Gamemode', value: response['gamemode'], inline: true },
+						{ name: 'Website', value: response['weburl'], inline: true },
 					],
 				}
 			}
