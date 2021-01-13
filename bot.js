@@ -44,8 +44,6 @@ var db = mysql.createConnection({
 //_______________________________[BOT Startup]_________________________________________________
 //@audit-ok Client Ready
 client.on('ready', () => {
-	client.user.setActivity("Unity of Indonesia", { type: "STREAMING"});
-
     console.log('Dumbledore Woke Up from sleep!');
 	console.log(`Logged in as ${client.user.tag}!`);
 	setTimeout(getLastReportId, 1000);
