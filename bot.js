@@ -567,7 +567,7 @@ client.on('message', msg => {
     if (msg.content === '/ip') 
     {
 
-        msg.reply(`Server IP: ${Samp_IP}`);
+        msg.reply(`Server IP: Matalu minta ip`);
  
     }  
     //------------------------------[Medthod 2]-------------------------------------------
