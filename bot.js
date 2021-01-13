@@ -162,20 +162,7 @@ function GetPlayersOnline(msg)
 					],
 				}
 			}
-			msg.channel.send(logMessage)
-			const editMessage = {
-				embed: {
-					title: 'Unity of Indonesia Roleplay',
-					color: embedColor,
-					fields: [
-						{ name: 'Server name', value: response['hostname'], inline: false },
-						{ name: 'Players Online', value: response['online'], inline: true },
-						{ name: 'Max Players', value: response['maxplayers'], inline: true },
-                                                { name: 'Gamemode', value: response['gamemode'], inline: true },
-					],
-				}
-			}
-			msg.channel.edit(editMessage)
+			msg.channel.edit(logMessage)
 			if(Bot_debug_mode)
 				console.log(value)
 		}    
