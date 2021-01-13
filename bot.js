@@ -162,7 +162,8 @@ function GetPlayersOnline(msg)
 					],
 				}
 			}
-			const status = {
+			msg.channel.send(logMessage)
+			const logMessage = {
 				embed: {
 					title: 'Unity of Indonesia Roleplay',
 					color: embedColor,
@@ -174,7 +175,7 @@ function GetPlayersOnline(msg)
 					],
 				}
 			}
-			msg.channel.edit(status)
+			msg.channel.edit(logMessage)
 			if(Bot_debug_mode)
 				console.log(value)
 		}    
