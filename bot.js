@@ -158,7 +158,7 @@ function GetPlayersOnline(msg)
 						{ name: 'Players Online', value: response['online'], inline: true },
 						{ name: 'Max Players', value: response['maxplayers'], inline: true },
                                                 { name: 'Gamemode', value: response['gamemode'], inline: true },
-						{ name: 'Rules', value: response['rules'], inline: true },
+						{ name: 'Players', value: response['players'], inline: true },
 					],
 				}
 			}
