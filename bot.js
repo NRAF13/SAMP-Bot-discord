@@ -162,6 +162,7 @@ function GetPlayersOnline(msg)
 				}
 			}
 			msg.channel.send(logMessage)
+                        msg.channel.edit(logMessage)
 			if(Bot_debug_mode)
 				console.log(value)
 		}    
