@@ -158,10 +158,11 @@ function GetPlayersOnline(msg)
 						{ name: 'Players Online', value: response['online'], inline: true },
 						{ name: 'Max Players', value: response['maxplayers'], inline: true },
                                                 { name: 'Gamemode', value: response['gamemode'], inline: true },
+						{ name: 'Rules', value: response['rules'], inline: true },
 					],
 				}
 			}
-			msg.channel.send(logMessage)
+			msg.channel.edit(logMessage)
 			if(Bot_debug_mode)
 				console.log(value)
 		}    
