@@ -49,13 +49,12 @@ client.on('ready', () => {
 	setTimeout(getLastReportId, 1000);
 	setInterval(ReportSync, 20000);
     client.user.setPresence({
-        status: "online",  // You can show online, idle... Do not disturb is dnd
+        status: "idle",  // You can show online, idle... Do not disturb is dnd
         game: {
             name: "!help",  // The message shown
             type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
         }
     });
-
 });
 //-----------------------------[Debug]-----------------------------------
 function toggle_debug() 
