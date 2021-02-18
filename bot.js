@@ -45,11 +45,11 @@ var db = mysql.createConnection({
 //@audit-ok Client Ready
 client.on('ready', () => {
     console.log('Dumbledore Woke Up from sleep!');
-    client.user.setActivity("my code", { type: "WATCHING"})
 	console.log(`Logged in as ${client.user.tag}!`);
 	setTimeout(getLastReportId, 1000);
 	setInterval(ReportSync, 20000);
-	
+
+    client.user.setActivity("my code", { type: "WATCHING"})
 
 });
 //-----------------------------[Debug]-----------------------------------
