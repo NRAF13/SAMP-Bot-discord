@@ -51,7 +51,7 @@ client.on('ready', () => {
         client.user.setStatus('idle')
         client.user.setPresence({
             game: {
-            name: 'response.online',
+            name: 'UNITY OF INDONESIA',
             type: "PLAYING",
             url: "https://www.unityofindonesia.com/"
         }
