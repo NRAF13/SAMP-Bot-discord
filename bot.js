@@ -48,13 +48,7 @@ client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
 	setTimeout(getLastReportId, 1000);
 	setInterval(ReportSync, 20000);
-    client.user.setPresence({
-        status: "idle",  // You can show online, idle... Do not disturb is dnd
-        game: {
-            name: "!help",  // The message shown
-            type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
-        }
-    });
+    client.user.setActivity(`Use f!help.`);
 });
 //-----------------------------[Debug]-----------------------------------
 function toggle_debug() 
