@@ -48,7 +48,14 @@ client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
 	setTimeout(getLastReportId, 1000);
 	setInterval(ReportSync, 20000);
-    client.user.setActivity(`Use f!help.`);
+        client.user.setStatus('idle')
+        client.user.setPresence({
+            game: {
+            name: 'Use f!help',
+            type: "Playing",
+            url: "https://discordapp.com/"
+        }
+    });
 });
 //-----------------------------[Debug]-----------------------------------
 function toggle_debug() 
