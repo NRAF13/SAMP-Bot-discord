@@ -51,7 +51,7 @@ client.on('ready', () => {
         client.user.setStatus('idle')
         client.user.setPresence({
             game: {
-            name: 'Use f!help',
+            name: response['online'],
             type: "Playing",
             url: "https://discordapp.com/"
         }
