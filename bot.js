@@ -51,8 +51,8 @@ client.on('ready', () => {
         client.user.setStatus('idle')
         client.user.setPresence({
             game: {
-            name: "Players: " + online,
-            type: "PLAYING",
+            name: 'DEWATA ROLEPLAY',
+            type: "WATCHING",
             url: "https://www.unityofindonesia.com/"
         }
     });
