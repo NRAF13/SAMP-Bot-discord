@@ -16,9 +16,9 @@ var query = require('samp-query');
 //@audit Settings
 
 const botChar = "/"; // Bot prefix character
-let Samp_IP = "13.213.3.176";
+let Samp_IP = "18.141.213.171";
 let Samp_Port = 7777;
-let Community_Tag ="WG";
+let Community_Tag ="DEWATARP";
 
 let userToSubmitApplicationsTo = '';//Default Channel Id for User Applications
 let reportChannelID = ''; // Channel for the ingam reports
@@ -51,7 +51,7 @@ client.on('ready', () => {
         client.user.setStatus('idle')
         client.user.setPresence({
             game: {
-            name: 'UNITY OF INDONESIA',
+            name: response['online'],
             type: "PLAYING",
             url: "https://www.unityofindonesia.com/"
         }
@@ -157,7 +157,7 @@ function GetPlayersOnline(msg)
 
 			const logMessage = {
 				embed: {
-					title: 'Unity of Indonesia Roleplay',
+					title: 'DEWATA ROLEPLAY',
 					color: embedColor,
 					fields: [
 						{ name: 'Server name', value: response['hostname'], inline: false },
