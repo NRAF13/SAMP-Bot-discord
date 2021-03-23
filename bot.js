@@ -51,7 +51,7 @@ client.on('ready', () => {
         client.user.setStatus('online')
         client.user.setPresence({
             game: {
-            name: response.online,
+            name: 'response.online',
             type: "WATCHING",
             url: "https://www.unityofindonesia.com/"
         }
