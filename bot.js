@@ -48,10 +48,10 @@ client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
 	setTimeout(getLastReportId, 1000);
 	setInterval(ReportSync, 20000);
-        client.user.setStatus('idle')
+        client.user.setStatus('online')
         client.user.setPresence({
             game: {
-            name: 'DEWATA ROLEPLAY',
+            name: response.online,
             type: "WATCHING",
             url: "https://www.unityofindonesia.com/"
         }
