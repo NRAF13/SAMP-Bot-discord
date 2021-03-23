@@ -30,7 +30,6 @@ let applicationQuestions = require("./application-questions.js"); //This .js fil
 let usersApplicationStatus = [];
 let appNewForm = [];
 let isSettingFormUp = false;
-var jumlah = response['online'];
 
 //______________________________[SAMP Server MySQL Connection]________________________________
 const mysql = require("mysql");
@@ -172,6 +171,7 @@ function GetPlayersOnline(msg)
                         msg.channel.edit(logMessage)
 			if(Bot_debug_mode)
 				console.log(value)
+			var jumlah = response['online];
 		}    
 	})
 
