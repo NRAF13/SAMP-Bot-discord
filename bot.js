@@ -30,7 +30,7 @@ let applicationQuestions = require("./application-questions.js"); //This .js fil
 let usersApplicationStatus = [];
 let appNewForm = [];
 let isSettingFormUp = false;
-var jumlah = response['online']jumlah;
+var jumlah = response['online'];
 
 //______________________________[SAMP Server MySQL Connection]________________________________
 const mysql = require("mysql");
