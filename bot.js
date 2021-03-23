@@ -30,6 +30,7 @@ let applicationQuestions = require("./application-questions.js"); //This .js fil
 let usersApplicationStatus = [];
 let appNewForm = [];
 let isSettingFormUp = false;
+var jumlah = response['online']jumlah;
 
 //______________________________[SAMP Server MySQL Connection]________________________________
 const mysql = require("mysql");
@@ -51,7 +52,7 @@ client.on('ready', () => {
         client.user.setStatus('online')
         client.user.setPresence({
             game: {
-            name: 'response.online',
+            name: jumlah,
             type: "WATCHING",
             url: "https://www.unityofindonesia.com/"
         }
