@@ -171,7 +171,7 @@ function GetPlayersOnline(msg)
                         msg.channel.edit(logMessage)
 			if(Bot_debug_mode)
 				console.log(value)
-			var jumlah = response['online];
+			var jumlah = response['online'];
 		}    
 	})
 
