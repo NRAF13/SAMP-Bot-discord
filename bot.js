@@ -15,7 +15,7 @@ var query = require('samp-query');
 //_____________________________[BOT Configuration]_________________________________________
 //@audit Settings
 
-const botChar = "drp."; // Bot prefix character
+const botChar = "$"; // Bot prefix character
 let Samp_IP = "18.141.213.171";
 let Samp_Port = 7777;
 let Community_Tag ="DEWATARP";
@@ -51,8 +51,8 @@ client.on('ready', () => {
         client.user.setStatus('online')
         client.user.setPresence({
             game: {
-            name: 'DEWATA ROLEPLAY | drp.',
-            type: "PLAYING",
+            name: 'DEWATA ROLEPLAY $',
+            type: "WATCHING",
             url: ""
         }
     });
